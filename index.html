@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JVweb</title>
+</head>
+<body ng-app="app">
+    <ul>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/about">About</a></li>
+        <li><a href="#/resume">Resume</a></li>
+    </ul>
+
+    <div>
+        <ng-view></ng-view>
+    </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
