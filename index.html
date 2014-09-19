@@ -2,20 +2,40 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>JVweb</title>
+	    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-style">
+		<link href="css/jquery.mmenu.css" rel="stylesheet">
+		<link href="css/simple-line-icons.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet" id="main-style">
+		<link href="css/add-ons.min.css" rel="stylesheet">
 </head>
 <body ng-app="app">
-    <ul>
-        <li><a href="#/">Home</a></li>
-        <li><a href="#/about">About</a></li>
-        <li><a href="#/resume">Resume</a></li>
-    </ul>
+<!-- start: Main Menu-->
+<div class="sidebar">
+	<div class="sidebar-collapse">
+		<div class="sidebar-header">
+			<img src="img/avatar.jpg" alt="me" />
+			<h2>Jon Vinson</h2>
+			<h3>jon.vinson@gmail.com <a href="#"><i class="fa fa-chevron-down"></i></a></h3>
+		</div>
+		<div class="sidebar-menu">
+			<ul class="nav nav-sidebar">
+				<li><a href="#/">Home</a></li>
+				<li><a href="#/about">About</a></li>
+				<li><a href="#/resume">Resume</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
-    <div>
-        <ng-view></ng-view>
-    </div>
+<!-- start: Main Display-->
+<div class="main">
+	<ng-view></ng-view>
+</div>
 
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
+	<script src="js/angular-resource.min.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
